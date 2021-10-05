@@ -276,7 +276,7 @@ button:hover {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 2px solid #ffc709;
+  border-bottom: 1px solid #c5c5c5;
 }
 
 .result__container__buttons .btn-rentabilidade-historica {
@@ -284,7 +284,12 @@ button:hover {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 2px solid #ffc709;
+  border-bottom: 1px solid #c5c5c5;
+}
+
+.result__container__buttons .btn--active {
+  border-bottom: 3px solid #ffc709;
+  font-weight: bold;
 }
 
 .result__container .carteira-recomendada__container {
@@ -378,9 +383,5 @@ button:hover {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-}
-
-.hidden {
-  display: none;
 }
 /*# sourceMappingURL=styles.css.map */

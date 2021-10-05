@@ -84,6 +84,30 @@ buttonSimular.addEventListener("click", (e) => {
   e.preventDefault();
 });
 
+// SELEÇÃO DE BOTÕES
+
+const btnCarteiraRecomendada = document.querySelector(
+  ".btn-carteira-recomendada"
+);
+const btnRentabilidadeHistorica = document.querySelector(
+  ".btn-rentabilidade-historica"
+);
+const buttonsSelect = [btnCarteiraRecomendada, btnRentabilidadeHistorica];
+
+buttonsSelect.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    if (btn.className === "btn-carteira-recomendada") {
+      btnCarteiraRecomendada.classList.add("btn--active");
+
+      btnRentabilidadeHistorica.classList.remove("btn--active");
+    } else if (btn.className === "btn-rentabilidade-historica") {
+      btnRentabilidadeHistorica.classList.add("btn--active");
+
+      btnCarteiraRecomendada.classList.remove("btn--active");
+    }
+  });
+});
+
 // VALORES
 const valorPosFixado = document.getElementById("valorPosFixado").innerText;
 const valorInflacao = document.getElementById("valorInflacao").innerText;
@@ -175,7 +199,7 @@ const labels = [
 
 const data = [
   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22,
-  23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34
+  23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
 ];
 const lineChart = document.getElementById("lineChart");
 Chart.defaults.scale.ticks.beginAtZero = true;
