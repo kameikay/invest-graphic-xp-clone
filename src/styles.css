@@ -1,9 +1,11 @@
-html, *, button {
+html,
+*,
+button {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -12,6 +14,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -29,11 +35,11 @@ a {
 }
 
 .active {
-  background-color: #FFC709;
+  background-color: #ffc709;
 }
 
 .active:hover {
-  background-color: #FFC709;
+  background-color: #ffc709;
 }
 
 .container {
@@ -55,7 +61,7 @@ button {
   background: transparent;
   height: 4rem;
   padding: 1rem 3rem;
-  border: 2px solid #FFC709;
+  border: 2px solid #ffc709;
   cursor: pointer;
   font-size: 1rem;
   line-height: 1rem;
@@ -154,7 +160,7 @@ button:hover {
   background: #ffda61;
   cursor: pointer;
   border-radius: 100px;
-  border: 0.25rem solid #FFC709;
+  border: 0.25rem solid #ffc709;
 }
 
 .slider-container .slider-content .slider-value {
@@ -219,5 +225,162 @@ button:hover {
 
 .simular:hover {
   background: #09a5ff57;
+}
+
+.result {
+  max-width: 1120px;
+  width: 100%;
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.result__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.result__container__buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.result__container__buttons .btn-carteira-recomendada {
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #ffc709;
+}
+
+.result__container__buttons .btn-rentabilidade-historica {
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #ffc709;
+}
+
+.result__container .carteira-recomendada__container {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.result__container .carteira-recomendada__container .grafico {
+  width: 40vw;
+}
+
+.result__container .carteira-recomendada__container .grafico canvas {
+  margin-top: 1rem;
+}
+
+.result__container .carteira-recomendada__container .tabela-rentabilidade {
+  width: 100%;
+  margin-left: 7rem;
+}
+
+.result__container .carteira-recomendada__container .tabela-rentabilidade table {
+  width: 100%;
+}
+
+.result__container .carteira-recomendada__container .tabela-rentabilidade table tr {
+  position: relative;
+}
+
+.result__container .carteira-recomendada__container .tabela-rentabilidade table tr th {
+  text-align: start;
+  font-size: 0.825rem;
+  font-weight: normal;
+  color: #c5c5c5;
+  padding: 0.5rem 0;
+}
+
+.result__container .carteira-recomendada__container .tabela-rentabilidade table tr td {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.5rem 0;
+}
+
+.result__container .carteira-recomendada__container .tabela-rentabilidade table tr .valorPosFixadoColor {
+  position: absolute;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 28px;
+          flex: 1 0 28px;
+  width: 5px;
+  height: 2rem;
+  left: -2rem;
+  bottom: 5px;
+  background-color: #6d7f99;
+}
+
+.result__container .carteira-recomendada__container .tabela-rentabilidade table tr .valorInflacaoColor {
+  position: absolute;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 28px;
+          flex: 1 0 28px;
+  width: 5px;
+  height: 2rem;
+  left: -2rem;
+  bottom: 5px;
+  background-color: #da7500;
+}
+
+.result__container .carteira-recomendada__container .tabela-rentabilidade table tr .valorInternacionalColor {
+  position: absolute;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 28px;
+          flex: 1 0 28px;
+  width: 5px;
+  height: 2rem;
+  left: -2rem;
+  bottom: 5px;
+  background-color: #311b92;
+}
+
+.result__container .rentabilidade-historica__container {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
 }
 /*# sourceMappingURL=styles.css.map */

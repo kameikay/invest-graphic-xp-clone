@@ -10,6 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="./styles.css">
+
   <title>Slider</title>
 
   <script defer src="./script.js"></script>
@@ -52,8 +53,65 @@
   </form>
 
   <div class="result">
-    
+    <div class="result__container">
+      <div class="result__container__buttons">
+        <button class="btn-carteira-recomendada">
+          Carteira recomendada
+        </button>
+        <button class="btn-rentabilidade-historica">
+          Rentabilidade histórica
+        </button>
+      </div>
+      <div class="carteira-recomendada__container">
+        <div class="grafico">
+          <canvas id="myChart"></canvas>
+        </div>
+
+        <div class="tabela-rentabilidade">
+          <table>
+            <tr>
+              <th></th>
+              <th>Categoria</th>
+              <th>Alocação</th>
+              <th>Valor</th>
+            </tr>
+
+            <tbody>
+              <tr>
+                <td class="valorPosFixadoColor"></td>
+                <td>Pós Fixado</td>
+                <td>85%</td>
+                <td>R$ <span id="valorPosFixado">85.000</span></td>
+              </tr>
+
+              <tr>
+                <td class="valorInflacaoColor"></td>
+                <td>Inflação</td>
+                <td>10%</td>
+                <td>R$ <span id="valorInflacao">10.000</span></td>
+              </tr>
+
+              <tr>
+                <td class="valorInternacionalColor"></td>
+                <td>Internacional</td>
+                <td>5%</td>
+                <td>R$ <span id="valorInternacional">5.000</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="rentabilidade-historica__container hidden">
+        <canvas id="lineChart"></canvas>
+      </div>
+    </div>
   </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./chart.js"></script>
 </body>
 
 </html>
