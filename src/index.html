@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./styles.css">
+  <title>Slider</title>
+
+  <script defer src="./script.js"></script>
+</head>
+
+<body>
+  <form class="container">
+    <div class="qual-objetivo">
+      <span>Qual o seu objetivo?</span>
+      <div class="buttons">
+        <button id="acimaInflacao" value="acimaInflacao">Quero ganhar constante acima da inflação</button>
+        <button id="longoPrazo" value="longoPrazo">Quero maiores rendimentos a longo prazo</button>
+        <button id="maximizarGanhos" value="maximizarGanhos">Aceito riscos para maximizar ganhos</button>
+      </div>
+
+    </div>
+
+    <div class="slider-container">
+      <span>Quanto você deseja investir?</span>
+      <div class="slider-content">
+        <div class="range-slider">
+          <input type="range" min="10000" max="50000000" step=10000 value="60000" class="slider" id="rangeSlider">
+        </div>
+        <div class="slider-value">
+          R$ <span class="invest-value">600.000</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="resgate">
+      <span>Quando pretende resgatar?</span>
+      <div class="buttons">
+        <button id="ateUm" value="ateUm">Em até 1 ano</button>
+        <button id="entreUmEDois" value="entreUmEDois">Entre 1 e 2 anos</button>
+        <button id="maisDeDois" value="maisDeDois">Mais de 2 anos</button>
+      </div>
+    </div>
+
+    <button type="button" class="simular" id="simular">Simular</button>
+  </form>
+
+  <div class="result">
+    
+  </div>
+</body>
+
+</html>
