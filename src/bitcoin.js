@@ -6,6 +6,8 @@ const finalValue = document.querySelector("#finalValue");
 
 const API_URL = "https://economia.awesomeapi.com.br/last/BTC-BRL";
 
+
+// Função que traz o valor atual do BTC
 async function getBTCCurrenciesTicker() {
   const response = await fetch(`${API_URL}`, {
     method: "GET",
@@ -26,6 +28,7 @@ function refreshValue() {
   return refreshedValue
 }
 
+// Função que pega o input do valor, multiplica pelo valor do BTC e coloca no span
 async function getValue(inputValue) {
   const value = await getBTCCurrenciesTicker();
   const result = value * inputValue;

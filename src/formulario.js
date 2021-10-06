@@ -89,6 +89,7 @@ buttonSimular.addEventListener("click", (e) => {
   e.preventDefault();
   divResult.classList.remove('display-hidden')
   formContainer.classList.add('display-hidden')
+
 });
 
 buttonRetornar.addEventListener('click', (e) => {
