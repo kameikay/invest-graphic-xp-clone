@@ -13,7 +13,9 @@
 
   <title>Slider</title>
 
-  <script defer src="./script.js"></script>
+  <script defer src="./formulario.js"></script>
+  <script defer src="./chart.js"></script>
+  <script defer src="./bitcoin.js"></script>
 </head>
 
 <body>
@@ -52,7 +54,7 @@
     <button type="button" class="simular" id="simular">Simular</button>
   </form>
 
-  <div class="result">
+  <div class="result display-hidden">
     <div class="result__container">
       <div class="result__container__buttons">
         <button class="btn-carteira-recomendada btn--active">
@@ -102,16 +104,33 @@
         </div>
       </div>
 
-      <div class="rentabilidade-historica__container hidden">
+      <div class="rentabilidade-historica__container display-hidden">
         <canvas id="lineChart"></canvas>
       </div>
+
+      <button class="simular-novamente">
+        Simular novamente
+      </button>
     </div>
   </div>
 
+  <div class="bitcoin">
+    <h2 class="heading">
+      O valor de
+      <div class="input-value">
+        <input type="number" value="0" id="inputValue">
+      </div>
+      bitcoins, hoje é de, aproximadamente,
+      <strong>
+        <span id="finalValue">
+          R$
+        </span>
+      </strong>
+    </h2>
 
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="./chart.js"></script>
 </body>
 
 </html>
