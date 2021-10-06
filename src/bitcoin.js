@@ -51,5 +51,3 @@ async function getValue(inputValue) {
 inputNumber.addEventListener("keyup", (e) => {
   getValue(e.target.value);
 });
-
-console.log(setInterval(refreshValue, 1000))
