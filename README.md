@@ -6,7 +6,7 @@
 
 <p>Simulador de investimentos na XP, utilizando ChartJs e Vanilla JS, em geral.</p>
 
-<p>Consulta de valor atual do Bitcoin.</p></br>
+<p>Consulta de valor atual do Bitcoin.</p>
 
 <h2>Referências:</h2>
 <h3>
